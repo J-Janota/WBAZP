@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link rel="stylesheet" href="../Styles/ToolStyles.css">
+    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="spring" id="body">
+    <nav class="navbar">
+        <i class="fa-solid fa-moon" id="themeButton"></i>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="menu">
+            <a href="Homepage.html">Homepage</a>
+            <a href="Tools.html">Tools</a>
+            <a href="Generators.html">Generators</a>
+            <a href="Translator.html">Translator</a>
+        </div>
+    </nav>
+    <div class="container tools" id="container">
+        <h1 style="font-size: 2rem;">Converters</h1>
+        <div class="buttonSection">
+            <button id="temperature">Temperature</button>
+            <button id="currency">Currency</button>
+            <button id="length">Length</button>
+            <button id="weight">Weight</button>
+            <button id="speed">Speed</button>
+            <button id="time">Time</button>
+            <button id="data">Data</button>
+            <button id="angle">Angle</button>
+            <button id="pressure">Pressure</button>
+            <button id="energy">Energy</button>
+            <button id="power">Power</button>
+            <button id="volume">Volume</button>
+            <button id="area">Area</button>
+            <button id="density">Density</button>
+            <button id="fuel">Fuel Efficiency</button>
+            <button id="frequency">Frequency</button>
+            <button id="force">Force</button>
+            <button id="acceleration">Acceleration</button>
+            <button id="torque">Torque</button>
+            <button id="illuminance">Illuminance</button>
+            <button id="luminance">Luminance</button>
+            <button id="sound">Sound Level</button>
+            <button id="magnetism">Magnetism</button>
+            <button id="radiation">Radiation</button>
+            <button id="resistance">Resistance</button>
+            <button id="capacitance">Capacitance</button>
+            <button id="voltage">Voltage</button>
+            <button id="current">Current</button>
+            <button id="conductance">Conductance</button>
+            <button id="charge">Charge</button>
+            <button id="entropy">Entropy</button>
+        </div>
+
+        <div id="converterDisplay"></div>
+    </div>
+    <footer>
+        <p>Created by Jan Janota</p>
+        <p>All rights reserved &copy; 2025</p>
+    </footer>
+    <script src="../Scripts/ToolScripts.js"></script>
+    <script src="../Scripts/Scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geojson/1.0.0/leaflet.geojson.min.js"></script>
+    <script>
+        window.onload = function () {
+        setInterval(function () {
+            let ps = document.querySelectorAll('#converterDisplay p[id$="Result"]');
+            ps.forEach(function (p) {
+            p.style.cssText = `
+                margin: 20px auto 0;
+                padding: 15px;
+                background: rgba(0,0,0,0.05);
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+                max-width: 500px;
+            `;
+            });
+        }, 500);
+        };
+    </script>
+
+</body>
+</html>
