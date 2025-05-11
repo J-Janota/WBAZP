@@ -1,0 +1,205 @@
+.container {
+    max-width: 900px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.buttonSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#converterDisplay {
+    width: 75%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+select, input[type="number"] {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+body.winter {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.winter h1,
+body.winter h2 {
+    color: #eee;
+}
+
+body.winter .container {
+    background-color: #1e1e1e;
+}
+
+body.winter button {
+    background-color: #bb86fc;
+}
+
+body.winter button:hover {
+    background-color: #9b59b6;
+}
+
+body.winter select,
+body.winter input[type="number"],
+body.winter #generatorsDisplay {
+    background-color: #2c2c2c;
+    color: #eee;
+    border: 1px solid #555;
+}
+
+body.winter #generatorsDisplay h2 {
+    color: #eee;
+}
+
+body.spring {
+    background-color: #f0fff4;
+    color: #2e7d32;
+}
+
+body.spring .container {
+    background-color: #ffffff;
+    border: 2px solid #b2fab4;
+}
+
+body.spring button {
+    background-color: #66bb6a;
+}
+
+body.spring button:hover {
+    background-color: #4caf50;
+}
+
+body.spring select,
+body.spring input[type="number"],
+body.spring #generatorsDisplay {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    color: #2e7d32;
+}
+
+body.summer {
+    background-color: #fffde7;
+    color: #f57c00;
+}
+
+body.summer .container {
+    background-color: #fff9c4;
+    border: 2px solid #ffe082;
+}
+
+body.summer button {
+    background-color: #fbc02d;
+    color: #000;
+}
+
+body.summer button:hover {
+    background-color: #f9a825;
+}
+
+body.summer select,
+body.summer input[type="number"],
+body.summer #generatorsDisplay {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    color: #f57c00;
+}
+
+body.fall {
+    background-color: #fffaf0;
+    color: #8d6e63;
+}
+
+body.fall .container {
+    background-color: #fbe9e7;
+    border: 2px solid #d7ccc8;
+}
+
+body.fall button {
+    background-color: #d84315;
+}
+
+body.fall button:hover {
+    background-color: #bf360c;
+}
+
+body.fall select,
+body.fall input[type="number"],
+body.fall #generatorsDisplay {
+    background-color: #fbe9e7;
+    border: 1px solid #bcaaa4;
+    color: #5d4037;
+}
+
+#generatorsDisplay {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.container.generators  {
+    display: flex;
+    flex-direction: column;
+}
+
+#generatorsDisplay > p {
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+.copyToClipboard {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+    .buttonSection {
+        gap: 8px;
+    }
+}

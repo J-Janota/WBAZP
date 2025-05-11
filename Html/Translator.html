@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link rel="stylesheet" href="../Styles/TranslateStyles.css">
+</head>
+<body class="spring" id="body">
+    <nav class="navbar">
+        <i class="fa-solid fa-moon" id="themeButton"></i>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="menu">
+            <a href="Homepage.html">Homepage</a>
+            <a href="Tools.html">Tools</a>
+            <a href="Generators.html">Generators</a>
+            <a href="Translator.html">Translator</a>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Translator</h1>
+    
+    <label for="sourceLang">Translate from:</label>
+    <select id="sourceLang"></select>
+
+    <label for="targetLang">to:</label>
+    <select id="targetLang"></select>
+    
+    <br><br>
+    <textarea id="textInput" placeholder="Enter text to translate..."></textarea><br>
+    <button id="translateButton">Translate</button>
+    
+    <h2>Translation:</h2>
+    <p id="translationOutput"></p>
+
+    <button id="ttsButton">Play Translation</button>
+    </main>
+    <footer>
+        <p>Created by Jan Janota</p>
+        <p>All rights reserved &copy; 2025</p>
+    </footer>
+    
+    <script src="../Scripts/TranslateScript.js"></script>
+    <script src="../Scripts/Scripts.js"></script>
+</body>
+</html>
